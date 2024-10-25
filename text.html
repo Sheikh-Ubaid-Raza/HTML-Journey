@@ -8,19 +8,35 @@
       p{
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        color: blue;
+        color: black;
         font-size: 20px;
       }
       p:hover{
-        color: black;
+        color: blue;
       }
+      header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+  }
+  .fa-solid{
+    font-size: 40px;
+    margin-right: 20px;
+}
+.topicon{
+    font-size: 50px;
+}
     </style>
 </head>
 <body>
-   <img src="./images/heading.webp" align="right" width="450px">
-
-    <h1 style="color: rgb(255, 0, 0);">Text Formatting Elements</h1> 
-
+   <header>
+       
+    <a href="./index.html">
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    </a>
+ <u><h1>Text Formatting Elements:</h1></u> 
+  </header>
+  <img src="./images/heading.webp" align="right" width="450px">
  <h2>Headings</h2>
  <p>HTML has six levels of headings.<br /><b size="7">h1</b><br /><b size="6">h2</b><br /><b size="5">h3</b><br /><b size="4">h4</b><br /><b size="3">h5</b><br /><b size="2">h5</b><br /><b size="1">h6</b></p>
 <p><b>h1</b> is used for main heading.<br /><b>h2</b>,<b>h3</b>,<b>h4</b>,<b>h5</b>,<b>h6</b> is used for subheadings</p>
@@ -60,5 +76,10 @@ Inside the <strong>dl</strong> element you will usually see pairs of <strong>dt<
 <p>This is used to contain the term or heading being defined.<br />(<strong>dt</strong> stands for definition term)</p>
 <h4>dd</h4>
 <p>This is used to contain the definition.<br />(<strong>dd</strong> stands for definition data)</p>
+
+<p align="center"><a href="#top" class="topicon">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+<script src="https://kit.fontawesome.com/0a50021b6f.js" crossorigin="anonymous"></script> 
 </body>
 </html>

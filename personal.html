@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Registration form</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration form</title>
     <style>
       p{
          color:rgb(255, 30, 0);
@@ -10,13 +12,19 @@
       fieldset{
          background-color:rgb(255, 174, 174);
       }
+      @media only screen and (max-width: 768px){
+        form{
+         width: 100%;
+         margin: 0;
+        }
+      }
 
     </style>
 </head>
 <body align="center">
     
-<form action="https://www.google.com" method="post" style="margin: 5%;">
-   <fieldset style="margin: 0 20% 0; border-radius: 50px;">
+<form action="https://www.google.com" method="post" >
+   <fieldset class="myclass" style="margin: 5% 15%; border-radius: 50px;">
       <legend style="font-size: 20px; background-color: white; border-radius: 10px;">Personal Details</legend>
  <p> Full Name
     <br />

@@ -6,21 +6,86 @@
     <title>My First Web Page</title>
     <link rel="stylesheet" href="extension.css">
     <style>
-        body{
-            min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0,7),rgba(4,9,30,0,7)),url(./bgimghtml.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+        *{
+            box-sizing: border-box;
         }
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        .all-links{
+            flex: 1;
+            text-align: right;
+}
+      .all-links ul li{
+            list-style-type: none;
+           display: inline-block;
+           padding: 8px 12px;
+}
+      .all-links ul li a{
+             text-decoration: none;
+            color: rgb(255, 0, 0);
+            font-size: 22px;
+}
+      .all-links ul li a:hover{
+             color: rgb(0, 37, 247);
+}
+
+
         p,li{
             font-size: 20px;
+        }
+        .container{
+            margin-left: 20px;
+        }
+        @media only screen and (max-width: 768px){
+            body{
+                padding: 10px 20px;
+                margin: 0;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+            .all-links ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+               
+            }
+            .all-links ul li{
+                margin: 10px 0;
+                
+            }
+            .all-links ul li a{
+                font-size: 14px;
+            }
+            .htmllogo{
+                width: 90px;
+                margin: 30px;
+            }
+            .simplehtmlcode{
+                width: 100%;
+            }
+            p,li{
+            font-size: 14px;
+        }
+        .container{
+            margin: 0;
+        }
+        .fa-solid{
+            font-size: 30px;
+        }
+        h1,h1{
+            font-size: 20px;
+        }
         }
     </style>
 </head>
 <body>
-    <section class="header">
+    <section  id="top" class="header">
         <div class="all-links">
             <ul>
    <li><a href="./about.html" target="-blank" face="arial">About Us</a></li>
@@ -34,7 +99,7 @@
     
     <h1 align="center" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">HTML</h1>
     <p align="center">HTML is the standard markup language for creating Web pages.</p><br />
-    <img align="right" src="./images/img_html.webp" width="250px"> 
+    <img align="right" src="./images/img_html.webp" width="250px" style="margin-right: 20px;" class="htmllogo"> 
     <ul>
    <h2>What is HTML?</h2>
    <li> HTML stands for Hyper Text Markup Language</li><br>
@@ -46,15 +111,22 @@
     <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li></p><br>
 
 </ul>
+<div class="container">
 <h2>HTML & CSS</h2>
  <p>HTML, or Hypertext Markup Language, serves as the fundamental building block of the World Wide Web.</p><p>Developed by Tim Berners-Lee in the early 1990s, HTML is a markup language used to create and structure content on the internet.</p><p> It employs a system of tags that define the elements within a web page, such as headings, paragraphs, links, images, and more.</p><p> HTML provides the essential structure for web documents, enabling browsers to interpret and render content in a visually coherent manner. It acts as the backbone of web development, facilitating the creation of dynamic and interactive websites when combined with other technologies like<b> CSS (Cascading Style Sheets)</b> and <b>JavaScript</b><br><p> The continuous evolution of HTML standards ensures adaptability to the dynamic landscape of the internet, allowing developers to craft engaging and accessible digital experiences. As a cornerstone of web development, HTML plays a pivotal role in shaping the online world we interact with on a daily basis.</p>
   <h3>Simple HTML Document</h3>
-  <img src="./images/simplehtmlcode.png" alt="Simple html code image">
+  <img src="./images/simplehtmlcode.png" alt="Simple html code image" class="simplehtmlcode">
   <h1>What is an HTML Element?</h1>
 <p>An HTML element is defined by a start tag, some content, and an end tag</p>
 <p><tagname> Content goes here... </tagname>
     The HTML element is everything from the start tag to the end tag:</p>
-    <img src="./images/tags1.webp" width="80%">
-    </section> 
+    <img src="./images/tags1.webp" width="80%" class="simplehtmlcode">
+</div>    </section> 
+<p align="center"><a href="#top" class="topicon">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+     
+<script src="https://kit.fontawesome.com/0a50021b6f.js" crossorigin="anonymous"></script> 
 </body>
 </html>

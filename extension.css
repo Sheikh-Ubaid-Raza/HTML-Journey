@@ -1,29 +1,4 @@
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0,7),rgba(4,9,30,0,7)),url(./bgimghtml.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.all-links{
-    flex: 1;
-    text-align: right;
-}
-.all-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.all-links ul li a{
-    text-decoration: none;
-    color: rgb(255, 0, 0);
-    font-size: 20px;
-}
-.all-links ul li a:hover{
-    color: rgb(255, 128, 78);
-}
+
 
 /* for gallery.html */
 
@@ -41,10 +16,24 @@ nav ul li {
 
 nav ul li a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav ul li a:hover{
     color: blue;
 }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backtohome{
+    font-size: 50px;
+}
+.topicon{
+    font-size: 50px;
+}
+

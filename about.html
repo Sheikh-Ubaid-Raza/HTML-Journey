@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My CV</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+
         <style>
             body{
                 background-color: rgb(124, 195, 204);
             }
             .cv{
-                margin: 10%;
-                padding: 10%;
+                margin: 0 10% 0;
+                padding: 4%;
                 border: 1px solid blue;
-                border-radius: 100px;
+                border-radius: 50px;
             }
             .name{
                 align-items: center;
@@ -23,22 +26,48 @@
             }
             .myimg{
                 width: 240px;
-                border-radius: 50%;
+                border-radius: 20px;
                 text-align: right;
             }
+            .linkedin{
+                text-decoration: none;
+                font-size: 16px;
+            }
+            .fa-solid{
+                font-size: 35px;
+            }
+            @media only screen and (max-width: 768px){
+                .myimg{
+        width: 250px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding:5%;
+        
+    }
+      }
         </style>
-    </head>
+</head>
     <body>
+        <a href="./index.html">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+          </a>
         <div class="cv">
       
         <center><h1 class="name">UBAID RAZA</h1>
         <p class="head">Programmer</p></center>
           <img src="./images/ubaid.jpg" align="right" class="myimg">
-   <p><b>Address:</b>&nbsp;House No:N-308 Korangi 3-1/2,Karachi</p>
+          <h2>About Me</h2>
+          <p>Hi, I am Ubaid, proficient a web development with skills in HTML, CSS, JavaScript, and TypeScript, learned through Giaic training. I am now expanding my expertise with Next.js and React.js. As a newcomer to the field, I am excited to apply my knowledge, learn from others, and take on new challenges.</p>
+   <h2>Contact</h2>
+          <p><b>Address:</b>&nbsp;House No:N-308 Korangi 3-1/2,Karachi</p>
 
    <p><b>Phone</b>:03410258688</p>
 
     <p><B>Email</B>:ubaidkamal420agmail.com</p>
+    <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" class="linkedin" target="_blank">  <i class="fa-brands fa-linkedin"></i> Linkedin</a>
       <h2>Educatiion</h2> 
 
  <ul type="circle">
@@ -53,6 +82,8 @@
     <li>Powerpoint</li>
     <li>HTML 5</li>
     <li>CSS 3</li>
+    <li>TypeScript/Javascript</li>
+    <li>Next js</li>
 </ul>
 <h2>Languages</h2>
 <ul>
@@ -60,5 +91,7 @@
     <li>Urdu</li>
     </ul>
 </div>
+ 
+<script src="https://kit.fontawesome.com/0a50021b6f.js" crossorigin="anonymous"></script> 
     </body>
 </html>
